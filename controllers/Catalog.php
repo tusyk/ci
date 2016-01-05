@@ -73,7 +73,7 @@ class Catalog extends CI_Controller {
 							echo '<div class="col-md-6 text-center" style="padding-bottom:10px;">';
 							$link_segment2=str_replace("/"," ",$category_list_item['title']);
 							$link_segment2=stripslashes(str_replace(" ","_",$link_segment2));
-							$link_segment3=base_url_2().'catalog/items/'.$category_list_item['item_id'].'_'.$link_segment2.'/';
+							$link_segment3=base_url().'catalog/items/'.$category_list_item['item_id'].'_'.$link_segment2.'/';
 							echo '<a href="'.$link_segment3.'">
 							<img  src="'.base_url().'assets/'.$category_list_item['photo1_l'].'" class="img-responsive" style="max-width:100%; margin-left: auto;
 							margin-right: auto;" alt="Image">

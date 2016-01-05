@@ -71,7 +71,7 @@ class Pages extends CI_Controller {
 				 
                 //Begin form success functionality
                 if ($return['error'] === false){
-				//$mail_to='t_usyk@yahoo.com';
+
 				$message1 = '
 				<html>
 				<head>
@@ -87,8 +87,8 @@ class Pages extends CI_Controller {
 				</body>
 				</html>'; 
 				$subject='Decor Plus contact form';
-				$headers = "Content-type: text/html; charset=utf-8 \r\n";
-				if (mail($mail_to, $subject, $message1, $headers)) {		
+				$headers = "Content-typtext/html; charset=utf-8 \r\n";
+				if (mail($mail_to, $subjct, $message1, $headers)) {		
                         $return['msg'] = 'Your message was send successfully. We will contact you shortly';
                 } else {
 						$return['error'] = true;
